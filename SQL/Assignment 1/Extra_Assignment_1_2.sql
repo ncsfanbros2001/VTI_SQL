@@ -1,5 +1,5 @@
 create database if not exists assignment1extra;
-use assignment1extra;
+
 --- Exercise 1
 create table Trainee
 (

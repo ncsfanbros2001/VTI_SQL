@@ -1,5 +1,5 @@
 create database if not exists Assignment1;
-use assignment1;
+
 --- TBL 1
 create table if not exists Department
 (
