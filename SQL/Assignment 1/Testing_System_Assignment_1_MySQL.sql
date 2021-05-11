@@ -5,7 +5,7 @@ create table if not exists Department
 (
 DepartmentID int auto_increment primary key,
 DepartmentName varchar(20)
-);
+); 
 --- TBL 2
 create table if not exists `Position`
 (
