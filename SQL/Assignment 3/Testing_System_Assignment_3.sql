@@ -1,4 +1,4 @@
-
+use assignment1;
 --- Question 2
 select DepartmentName from department;
 
@@ -46,7 +46,7 @@ where CreateDate < '2019-12-20';
 
 --- Question 13
 delete from question
-where Content like 'câu hỏi%';
+where Content like 'Câu hỏi%';
 
 --- Question 14
 update `Account`

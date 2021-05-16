@@ -25,6 +25,7 @@ foreign key (DepartmentID) references Department(DepartmentID),
 foreign key (PositionID) references `Position`(PositionID),
 CreateDate date
 );
+select * from `Account`;
 --- TBL 4
 create table if not exists `Group`
 (
@@ -74,6 +75,8 @@ Content varchar(50),
 QuestionID int,
 isCorrect enum('True', 'False')
 );
+alter table answer
+ADD FOREIGN KEY (QuestionID) REFERENCES Question(QuestionID);
 --- TBL 10
 create table if not exists Exam
 (

@@ -23,9 +23,9 @@ where char_length(Full_name) = 17;
 SELECT Full_name,
 CASE
     WHEN ET_IQ + ET_Gmath >= 20 and ET_IQ >= 8 and ET_Gmath >= 8 and ET_English>=18 THEN 'ET'
-    ELSE ':('
 END AS Result
-FROM Trainee;
+FROM Trainee
+where ET_IQ + ET_Gmath >= 20 and ET_IQ >= 8 and ET_Gmath >= 8 and ET_English>=18;
 
 --- Question 5
 delete from trainee
