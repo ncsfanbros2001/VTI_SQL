@@ -1,11 +1,14 @@
 create database if not exists Assignment1;
-
+use assignment1;
 --- TBL 1
 create table if not exists Department
 (
 DepartmentID int auto_increment primary key,
 DepartmentName varchar(20)
 ); 
+select * from `Account` a left join Department b on a.DepartmentID = b.DepartmentID;
+insert into `Account` (Email, Username, Fullname, DepartmentID, PositionID, CreateDate)
+values ('newcap@gmail.com', 'Captain America', 'John Walker', '13', '2', '2011/11/27');
 --- TBL 2
 create table if not exists `Position`
 (
